@@ -1,3 +1,0 @@
-this file is used for fix the bug
-add newline to fix bug in dark-mode
-another bug is detected
