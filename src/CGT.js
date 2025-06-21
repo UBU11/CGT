@@ -7,7 +7,16 @@ for (let i = 0; i < 3; i++) {
     
 }
 console.log(randNum)
-display.innerText= randNum
+let i = 0
+let setDisplay = setInterval(() => {
+    display.innerText = randNum[i]
+    i++;
+    if(i>3){
+        clearInterval(setDisplay)
+        display.innerText=""
+    }
+}, randNum.length * 500);
+ 
 let choose = []
 
 btn.forEach((item)=>{
