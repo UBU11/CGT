@@ -2,8 +2,8 @@
 const btn = document.querySelectorAll("button");
 const display = document.getElementById("display");
 let randNum = [];
-for (let i = 0; i < 10; i++) {
-    randNum.push(Math.floor(Math.random() * 10))
+for (let i = 0; i < 3; i++) {
+    randNum.push(Math.floor(Math.random() * 9) +1)
     
 }
 console.log(randNum)
