@@ -1,7 +1,8 @@
-
+const score = document.getElementById("score")
 const btn = document.querySelectorAll("button");
 const display = document.getElementById("display");
 let randNum = [];
+ScoreVal=0;
 for (let i = 0; i < 3; i++) {
     randNum.push(Math.floor(Math.random() * 9) +1)
     
@@ -76,6 +77,7 @@ function startTimer(duration, display) {
         display.textContent = minutes + ":" + seconds;
             --timer
             if(choose.toString() == randNum.toString()){
+                score.textContent = `score:${ScoreVal +10}`
                 clearInterval(intervalId);
             }
             // timer = duration; // uncomment this line to reset timer automatically after reaching 0
